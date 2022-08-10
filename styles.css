@@ -1,0 +1,61 @@
+html {
+  font-size: 62.5%;
+}
+
+* {
+  padding: 0;
+  border: 0;
+  margin: 0;
+
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+}
+
+:root {
+  --background: #700353;
+  --background-alternative: #ffbfb7;
+  --text-color: #320d6d;
+
+  --h2-font-size: 3.6rem;
+  --blockquote-font-size: 1.6rem;
+
+  --border-radius: 10px;
+
+  --padding: 4rem;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  background: var(--background);
+}
+
+.children {
+  width: 50rem;
+  height: 50rem;
+  background: var(--background-alternative);
+
+  text-align: center;
+  padding: var(--padding);
+
+  color: var(--text-color);
+
+  border-radius: var(--border-radius);
+}
+
+.children h2 {
+  font-size: var(--h2-font-size);
+}
+
+.children blockquote {
+  margin-top: 4rem;
+  font-size: var(--blockquote-font-size);
+}
